@@ -190,41 +190,28 @@ form input{
 
 /* ---------------- RESPONSIVE ---------------- */
 
-@media (max-width: 900px){
+/* ---------- LAPTOP FIX (most common widths) ---------- */
+@media (max-width: 1400px){
+  ul h3{ font-size: 44px; }
+  ul li a{ font-size: 28px; margin-right: 10px; padding: 10px 12px; }
 
-  ul h3{
-    margin-right: 0%;
-    width: 100%;
-  }
+  .describe h1{ font-size: 44px; margin-left: 6%; }
+  .describe p{ font-size: 22px; margin-left: 6%; }
+  .describe .skills{ font-size: 34px; margin-left: 6%; }
 
-  .describe h1,
-  .describe p,
-  .describe .skills,
-  .html-skills,
-  .CSS-skills,
-  form,
-  .contact-form .top-label{
-    margin-left: 5%;
-  }
+  .html-skills{ font-size: 22px; margin-left: 6%; width: 42%; }
+  .CSS-skills{ font-size: 22px; margin-left: 4%; width: 42%; }
 
-  .html-skills,
-  .CSS-skills{
-    width: 90%;
-  }
+  form{ margin-left: 6%; width: 75%; }
+}
 
-  form{
-    width: 90%;
-  }
+/* ---------- SMALLER LAPTOP / TABLET ---------- */
+@media (max-width: 1000px){
+  ul h3{ width: 100%; }
+  ul{ justify-content: flex-start; }
 
-  ul li a{
-    font-size: 24px;
-  }
+  .html-skills{ width: 90%; margin-left: 5%; }
+  .CSS-skills{ width: 90%; margin-left: 5%; }
 
-  .describe h1{
-    font-size: 36px;
-  }
-
-  .describe p{
-    font-size: 20px;
-  }
+  form{ width: 90%; margin-left: 5%; }
 }
