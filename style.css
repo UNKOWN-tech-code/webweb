@@ -1,13 +1,16 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 body {
-  height: 1800px;
-  background: radial-gradient(circle at center, #1b1a1a 0%, #232527 50%, #000000 100%); /* am codeam la (https://www.w3schools.com/cssref/func_radial-gradient.php) henawa  */
+  min-height: 100vh;
+  background: radial-gradient(circle at center, #1b1a1a 0%, #232527 50%, #000000 100%);
 }
+
+/* ---------------- NAV ---------------- */
 
 ul {
    font-size: 40px;  
@@ -15,10 +18,9 @@ ul {
    background-color: #191b1c;
    display: flex;
    justify-content: flex-end;
-   padding-bottom: 20px;
-   padding-top: 20px;
+   flex-wrap: wrap;
+   padding: 20px;
 }
-
 
 ul li a {
     font-size: 50px;
@@ -37,31 +39,35 @@ ul li a:hover {
 ul h3{
     font-size: 60px;
     color: white;
-    margin-right: 1400px;
+    margin-right: 40%;   /* instead of 1400px */
     padding-bottom: 10px;
     padding-top: 20px;
 }
+
+/* ---------------- HERO ---------------- */
 
 .describe h1 {
     font-size: 60px;
     color: white;
     margin-top: 50px;
-    margin-left: 570px;
+    margin-left: 8%;
 }
 
 .describe p{
     font-size: 40px;
     color: white;
     margin-top: 40px;
-    margin-left: 570px;
+    margin-left: 8%;
 }
 
 .describe .skills{
     font-size: 50px;
     color: white;
     margin-top: 100px;
-    margin-left: 570px;
+    margin-left: 8%;
 }
+
+/* ---------------- SKILLS ---------------- */
 
 .html-skills{
     border-radius: 20px;
@@ -69,10 +75,11 @@ ul h3{
     color: #ffffff;
     background: rgb(72, 72, 72);
     display: inline-block;
-    margin-left: 570px;
+    margin-left: 8%;
     margin-top: 40px;
     padding: 15px;
     box-shadow:0px 0px 10px 5px #c4c4c4;
+    width: 40%;
 }
 
 .CSS-skills{
@@ -81,11 +88,15 @@ ul h3{
     color: #ffffff;
     background: rgb(72, 72, 72);
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 5%;
     margin-top: 40px;
     padding: 15px;
     box-shadow:0px 0px 10px 5px #c4c4c4;
+    width: 40%;
 }
+
+/* ---------------- FOOTER ---------------- */
+
 h5{
     font-size: 30px;
     color: #ffffff;
@@ -94,6 +105,8 @@ h5{
     margin-top: 240px;
     padding:20px 20px;
 }
+
+/* ---------------- EXM ---------------- */
 
 .exm h3{
     text-align: center;
@@ -106,25 +119,24 @@ h5{
 
 .exm h3 a{
     color: rgb(0, 0, 0);
-    background: fixed;
     text-decoration: none;
     background: #838383;
-    padding: 3px;
+    padding: 6px 12px;
     border-radius: 20px;
     transition: 0.3s;
     margin-left: 4px;
-    padding-left: 10px;
-    padding-right: 10px;
 }
+
 .exm h3 a:hover {
-    padding:6px;
     box-shadow: 0px 0px 12px 2px white;
 }
+
+/* ---------------- FORM ---------------- */
 
 .contact-form .top-label{
     font-size:60px;
     color:white;
-    margin-left:20px;
+    margin-left:8%;
 }
 
 hr{
@@ -136,14 +148,11 @@ form{
     border-radius: 30px;
     display: inline-block;
     font-size: 50px;
-    justify-content: center;
-    padding: 10px;
-    padding-top: 30px;
-    padding-right: 1030px;
-    padding-left: 20px;
+    padding: 20px;
     margin-top: 50px;
-    margin-left: 570px;
+    margin-left: 8%;
     box-shadow: 0px 0px 50px 10px white;
+    width: 60%;
 }
 
 form label{
@@ -157,25 +166,65 @@ form input{
     font-size: 20px;
     display: block;
     padding: 10px;
-    padding-right: 100px;
     margin-left: 20px;
     margin-bottom: 10px;
     border-radius: 20px;
+    width: 90%;
 }
 
 .textarea {
-  width: 400px;
+  width: 90%;
   height: 150px;
   padding: 10px;
   font-size: 18px;
-  border-radius: 8px;
+  border-radius: 20px;
   margin-left: 20px;
   margin-bottom: 20px;
-  border-radius: 20px;
 }
 
 .mesl{
     margin-top: 20px;
     margin-bottom: 10px;
     display: block;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 900px){
+
+  ul h3{
+    margin-right: 0%;
+    width: 100%;
+  }
+
+  .describe h1,
+  .describe p,
+  .describe .skills,
+  .html-skills,
+  .CSS-skills,
+  form,
+  .contact-form .top-label{
+    margin-left: 5%;
+  }
+
+  .html-skills,
+  .CSS-skills{
+    width: 90%;
+  }
+
+  form{
+    width: 90%;
+  }
+
+  ul li a{
+    font-size: 24px;
+  }
+
+  .describe h1{
+    font-size: 36px;
+  }
+
+  .describe p{
+    font-size: 20px;
+  }
 }
