@@ -1,0 +1,181 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body {
+  height: 1800px;
+  background: radial-gradient(circle at center, #1b1a1a 0%, #232527 50%, #000000 100%); /* am codeam la (https://www.w3schools.com/cssref/func_radial-gradient.php) henawa  */
+}
+
+ul {
+   font-size: 40px;  
+   list-style:none;
+   background-color: #191b1c;
+   display: flex;
+   justify-content: flex-end;
+   padding-bottom: 20px;
+   padding-top: 20px;
+}
+
+
+ul li a {
+    font-size: 50px;
+    margin-right: 30px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+   background-color: #111111;
+}
+
+ul h3{
+    font-size: 60px;
+    color: white;
+    margin-right: 1400px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.describe h1 {
+    font-size: 60px;
+    color: white;
+    margin-top: 50px;
+    margin-left: 570px;
+}
+
+.describe p{
+    font-size: 40px;
+    color: white;
+    margin-top: 40px;
+    margin-left: 570px;
+}
+
+.describe .skills{
+    font-size: 50px;
+    color: white;
+    margin-top: 100px;
+    margin-left: 570px;
+}
+
+.html-skills{
+    border-radius: 20px;
+    font-size: 35px;
+    color: #ffffff;
+    background: rgb(72, 72, 72);
+    display: inline-block;
+    margin-left: 570px;
+    margin-top: 40px;
+    padding: 15px;
+    box-shadow:0px 0px 10px 5px #c4c4c4;
+}
+
+.CSS-skills{
+    border-radius: 20px;
+    font-size: 35px;
+    color: #ffffff;
+    background: rgb(72, 72, 72);
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 40px;
+    padding: 15px;
+    box-shadow:0px 0px 10px 5px #c4c4c4;
+}
+h5{
+    font-size: 30px;
+    color: #ffffff;
+    background: rgb(31, 31, 31);
+    text-align: center;
+    margin-top: 240px;
+    padding:20px 20px;
+}
+
+.exm h3{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin:50px;
+    margin-top:40px;
+    font-size: 20px;
+}
+
+.exm h3 a{
+    color: rgb(0, 0, 0);
+    background: fixed;
+    text-decoration: none;
+    background: #838383;
+    padding: 3px;
+    border-radius: 20px;
+    transition: 0.3s;
+    margin-left: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.exm h3 a:hover {
+    padding:6px;
+    box-shadow: 0px 0px 12px 2px white;
+}
+
+.contact-form .top-label{
+    font-size:60px;
+    color:white;
+    margin-left:20px;
+}
+
+hr{
+  margin: 15px;
+}
+
+form{
+    background: rgb(17, 17, 17);
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 50px;
+    justify-content: center;
+    padding: 10px;
+    padding-top: 30px;
+    padding-right: 1030px;
+    padding-left: 20px;
+    margin-top: 50px;
+    margin-left: 570px;
+    box-shadow: 0px 0px 50px 10px white;
+}
+
+form label{
+    font-size: 30px;
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+form input{
+    margin-top: 5px;
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+    padding-right: 100px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.textarea {
+  width: 400px;
+  height: 150px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.mesl{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+}

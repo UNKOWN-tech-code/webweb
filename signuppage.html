@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Andy's Sign up page</title>
+
+<style>
+/* to change all elemensts to same style */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* the hole body of the page */
+body{
+  margin-top: 130px;
+  margin-bottom: 110px;
+  background: rgb(53, 53, 173);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* main box */
+.main-box{
+  width: 900px;
+  height: 600px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0px 10px 40px rgba(0,0,0,0.3);
+}
+
+/* left side of the box */
+.left{
+  width: 50%;
+  background: linear-gradient(135deg, #2c61c5, #6dd1ff);
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column; /* ecplain this to them this element: texti "Andy's page" lasarawaya w jyay bkarawa lagal  (padding) */
+  justify-content: center;
+}
+
+.left h1{
+  font-size: 36px;
+}
+
+.left p{
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* right side*/
+.right{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* sign up box */
+.signup-box{
+  width: 380px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 30px 1px;
+}
+
+.signup-box h2{
+  text-align: center;
+}
+
+hr{
+  margin: 15px 0;
+}
+
+/* inputs */
+.input-group label{
+  display: block;
+  margin-top: 10px;
+}
+
+.input-group input{
+  width: 100%;
+  padding: 7px;
+  margin-top: 5px;
+  transition: 0.3s;
+}
+
+.input-group input:hover{
+  padding: 10px;
+}
+
+/* button */
+button{
+  width: 100%;
+  margin-top: 20px;
+  padding: 8px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #72a3ff, #6dd1ff);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover{
+  padding: 12px;
+  box-shadow: 0px 2px 10px black;
+}
+
+.have-account{
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: blue;
+}
+</style>
+</head>
+
+<body>
+
+<div class="main-box">
+
+  <!-- left side of the main box -->
+  <div class="left">
+    <h1>Andy's page</h1>
+    <p>Create your account and get started today.</p>
+    <p>Andy's page is a platform that allows you to connect with friends and share your ideas. Sign up now to join the community!</p>
+  </div>
+
+  <!-- right side of the main box -->
+  <div class="right">
+
+    <div class="signup-box">
+      <h2>Sign up</h2>
+      <hr>
+
+      <div class="input-group">
+        <label><b>Email</b></label>
+        <input type="email" placeholder="Enter your email">
+      </div>
+
+      <div class="input-group">
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter your password">
+      </div>
+
+      <div class="input-group">
+        <label><b>Phone number</b>
+        <input type="number" placeholder="Enter your phone number">
+      </div>
+
+      <div class="input-group">
+        <label><b>Birthday</b></label>
+        <input type="date">
+      </div>
+
+      <button>Sign up</button>
+
+      <hr>
+      <p class="have-account">
+        You have an account? <a href="loginpage.html">Login</a>
+      </p>
+    </div>
+
+    </div>
+
+  </div>
+</body>
+</html>
